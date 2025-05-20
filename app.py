@@ -1,11 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import os
-
 
 app = Flask(__name__)
-SECRET_KEY = os.environ.get("SECRET_KEY", "dev")
-
 CORS(app)
 
 todos = [
