@@ -4,7 +4,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Use a dictionary for todos, with id as the key
 todos = {
     1: {"id": 1, "task": "Learn Flask", "done": False},
     2: {"id": 2, "task": "Build a React app", "done": False}
